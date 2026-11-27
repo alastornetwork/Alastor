@@ -1,0 +1,30 @@
+# Node / TypeScript
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Rust
+target/
+Cargo.lock
+
+# Go
+bin/
+*.exe
+
+# Foundry / Solidity
+out/
+cache/
+broadcast/
+
+# OS & Secrets
+.DS_Store
+Thumbs.db
+.env
+.env.*

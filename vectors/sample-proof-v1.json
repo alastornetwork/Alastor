@@ -1,0 +1,35 @@
+{
+  "payload": {
+    "schema": "alastor.proof-of-error",
+    "version": "1.0.0",
+    "proofId": "d4e8b2c0-7a1f-4e92-9b3c-1102a8f47c19",
+    "taskId": "9c31a5f4-210b-4c77-8a50-6e4402b190ef",
+    "claimId": "claim-1",
+    "findingId": "5b09e12a-84c3-41d0-b921-7f12e30a94c8",
+    "category": "numerical",
+    "claimText": "Burning 250,000 tokens from a 1,000,000 supply reduces total supply by 33.3%.",
+    "verdict": "calculation_error",
+    "severity": "high",
+    "judgeSummary": "250,000 divided by the initial 1,000,000 supply is a 25% reduction, not 33.3% (which divides by the post-burn supply of 750,000).",
+    "hunterInstanceId": "hunter-01",
+    "judgeInstanceId": "judge-01",
+    "evidenceSummary": [
+      {
+        "evidenceId": "ev-pct-01",
+        "toolName": "percentage_check",
+        "sourceLocator": "deterministic://decimal-40/percentage_check",
+        "observedOutcome": "computed=-25%, claimed=-33.3%, delta=8.3pp (inconsistent)",
+        "capturedAt": "2026-11-27T00:00:00.000Z"
+      }
+    ],
+    "limitations": [
+      "Evaluates internal mathematical consistency of stated figures."
+    ],
+    "publishedAt": "2026-11-27T00:00:05.000Z"
+  },
+  "digest": {
+    "algorithm": "SHA-256",
+    "canonicalization": "RFC8785-JCS",
+    "value": "c994b4b8346f388ca2aa4a0bd377110ea121dbd0e51ebad2f1e635bdea7bbd7b"
+  }
+}

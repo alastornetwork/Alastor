@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alastor-sdk"
+version = "0.2.0"
+description = "Zero-dependency Python RFC 8785 + SHA-256 Proof of Error verifier and 40-digit Decimal checker for ALASTOR Protocol."
+readme = "../../README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ALASTOR Protocol" }]
+
+[project.scripts]
+alastor-verify = "alastor.cli:main"

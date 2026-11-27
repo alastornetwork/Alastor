@@ -1,0 +1,24 @@
+{
+  "name": "@alastor/sdk",
+  "version": "0.2.0",
+  "description": "TypeScript SDK for ALASTOR Proof of Error RFC 8785 + SHA-256 verification, 40-digit exact decimal checks, and Arena API queries.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test ./test/sdk.test.mjs"
+  },
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "license": "MIT"
+}
