@@ -8,6 +8,7 @@
 **Making Intelligence Accountable.**  
 Live Verification Arena & Proof Registry: **[https://alastor.tech](https://alastor.tech)**
 
+CA: 0xbf131d2ab39fe1d1c60406413321214424736da4
 ALASTOR is an adversarial verification protocol that separates claim investigation (**HUNTER** agents) from evidence adjudication (**JUDGE** agents) behind a deterministic **Evidence Gate**. Confirmed factual, numerical, citation, or on-chain discrepancies are serialized under **RFC 8785 JSON Canonicalization Scheme (JCS)** and signed as SHA-256 **`Proof of Error`** artifacts (`alastor.proof-of-error`).
 
 This repository contains the open-source **multi-language verification SDKs, CLI verifiers, cryptographic test vectors, and Robinhood Chain (`4663`) anchoring contracts** for integrating and independently auditing ALASTOR verdicts without trusting the hosted Arena coordinator.
